@@ -23,7 +23,9 @@ db.once('open', () => {
 // Define Mongoose Schema and Models for educational content (e.g., courses, articles, videos)
 
 // Define your routes for creating, updating, and retrieving educational content
-
+app.get('/',(req,res)=>{
+  console.log("say hello to Netflix backend");
+});
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
